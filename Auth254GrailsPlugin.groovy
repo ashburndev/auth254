@@ -42,6 +42,22 @@ Brief summary/description of the plugin.
 
     def doWithSpring = {
         // TODO Implement runtime spring config (optional)
+        println "***** Auth254GrailsPlugin.groovy doWithSpring"
+      
+        //  println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
+        //  println "***** application = ${application}"
+      
+        println "\n========== properties =========="
+        this.properties.each {println it}
+      
+        println "\n========== declared fields =========="
+        this.class.declaredFields.each {println it}
+      
+        println "\n========== methods =========="
+        this.class.methods.each {println it}
+      
+        println ""
+
     }
 
     def doWithDynamicMethods = { ctx ->
