@@ -47,14 +47,14 @@ Brief summary/description of the plugin.
         //  println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
         //  println "***** application = ${application}"
       
-        println "\n========== properties =========="
-        this.properties.each {println it}
-      
-        println "\n========== declared fields =========="
-        this.class.declaredFields.each {println it}
-      
-        println "\n========== methods =========="
-        this.class.methods.each {println it}
+  //        println "\n========== properties =========="
+  //        this.properties.each {println it}
+  //      
+  //        println "\n========== declared fields =========="
+  //        this.class.declaredFields.each {println it}
+  //      
+  //        println "\n========== methods =========="
+  //        this.class.methods.each {println it}
       
         println "\n========== attempt to access application property =========="
         println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
