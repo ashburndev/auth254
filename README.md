@@ -210,3 +210,144 @@ But reading through the Grails documentation suggests that I should be able to d
     ........ashburndave@dphnuc:~/g2projects/auth254$ 
     ashburndave@dphnuc:~/g2projects/auth254$ 
 
+## Accessing property application inside method doWithSpring of Auth254GrailsPlugin
+
+    ashburndave@dphnuc:~/g2projects/myapp254$ grails --non-interactive --plain-output run-app
+    |Loading Grails 2.5.4
+    |Configuring classpath
+    .
+    |Environment set to development
+    .................................
+    |Packaging Grails application
+    ***** auth254/scripts/_Events.groovy eventCompileStart
+    ***** kind?.getClass()?.getName() = org.codehaus.gant.GantBinding
+    ***** kind = org.codehaus.gant.GantBinding@629a9f26
+    
+    ========== properties ==========
+    class=class _Events
+    binding=org.codehaus.groovy.grails.cli.support.GrailsBuildEventListener$1@286855ea
+    
+    ========== declared fields ==========
+    private static org.codehaus.groovy.reflection.ClassInfo _Events.$staticClassInfo
+    public static transient boolean _Events.__$stMC
+    private static java.lang.ref.SoftReference _Events.$callSiteArray
+    
+    ========== methods ==========
+    public static void _Events.main(java.lang.String[])
+    public java.lang.Object _Events.run()
+    public java.lang.Object groovy.lang.Script.invokeMethod(java.lang.String,java.lang.Object)
+    public groovy.lang.Binding groovy.lang.Script.getBinding()
+    public java.lang.Object groovy.lang.Script.evaluate(java.lang.String) throws org.codehaus.groovy.control.CompilationFailedException
+    public java.lang.Object groovy.lang.Script.evaluate(java.io.File) throws org.codehaus.groovy.control.CompilationFailedException,java.io.IOException
+    public void groovy.lang.Script.setBinding(groovy.lang.Binding)
+    public void groovy.lang.Script.println()
+    public void groovy.lang.Script.println(java.lang.Object)
+    public void groovy.lang.Script.run(java.io.File,java.lang.String[]) throws org.codehaus.groovy.control.CompilationFailedException,java.io.IOException
+    public void groovy.lang.Script.setProperty(java.lang.String,java.lang.Object)
+    public java.lang.Object groovy.lang.Script.getProperty(java.lang.String)
+    public void groovy.lang.Script.print(java.lang.Object)
+    public void groovy.lang.Script.printf(java.lang.String,java.lang.Object)
+    public void groovy.lang.Script.printf(java.lang.String,java.lang.Object[])
+    public groovy.lang.MetaClass groovy.lang.GroovyObjectSupport.getMetaClass()
+    public void groovy.lang.GroovyObjectSupport.setMetaClass(groovy.lang.MetaClass)
+    public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+    public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+    public final void java.lang.Object.wait() throws java.lang.InterruptedException
+    public boolean java.lang.Object.equals(java.lang.Object)
+    public java.lang.String java.lang.Object.toString()
+    public native int java.lang.Object.hashCode()
+    public final native java.lang.Class java.lang.Object.getClass()
+    public final native void java.lang.Object.notify()
+    public final native void java.lang.Object.notifyAll()
+    
+    ............................................
+    |Running Grails application
+    ***** Auth254GrailsPlugin.groovy doWithSpring
+    ========== properties ==========
+    doWithSpring=Auth254GrailsPlugin$_closure2@5c793b25
+    title=Auth254 Plugin
+    class=class Auth254GrailsPlugin
+    onShutdown=Auth254GrailsPlugin$_closure7@bfd96c0
+    onConfigChange=Auth254GrailsPlugin$_closure6@4506f177
+    version=0.1
+    doWithWebDescriptor=Auth254GrailsPlugin$_closure1@7fa6eb3a
+    pluginExcludes=[grails-app/views/error.gsp]
+    doWithDynamicMethods=Auth254GrailsPlugin$_closure3@6a1357f8
+    documentation=http://grails.org/plugin/auth254
+    grailsVersion=2.5 > *
+    onChange=Auth254GrailsPlugin$_closure5@d3f87ec
+    description=Brief summary/description of the plugin.
+    doWithApplicationContext=Auth254GrailsPlugin$_closure4@7fc04275
+    authorEmail=
+    author=Your name
+    ========== declared fields ==========
+    private java.lang.Object Auth254GrailsPlugin.version
+    private java.lang.Object Auth254GrailsPlugin.grailsVersion
+    private java.lang.Object Auth254GrailsPlugin.pluginExcludes
+    private java.lang.Object Auth254GrailsPlugin.title
+    private java.lang.Object Auth254GrailsPlugin.author
+    private java.lang.Object Auth254GrailsPlugin.authorEmail
+    private java.lang.Object Auth254GrailsPlugin.description
+    private java.lang.Object Auth254GrailsPlugin.documentation
+    private java.lang.Object Auth254GrailsPlugin.doWithWebDescriptor
+    private java.lang.Object Auth254GrailsPlugin.doWithSpring
+    private java.lang.Object Auth254GrailsPlugin.doWithDynamicMethods
+    private java.lang.Object Auth254GrailsPlugin.doWithApplicationContext
+    private java.lang.Object Auth254GrailsPlugin.onChange
+    private java.lang.Object Auth254GrailsPlugin.onConfigChange
+    private java.lang.Object Auth254GrailsPlugin.onShutdown
+    private static org.apache.commons.logging.Log Auth254GrailsPlugin.log
+    private static org.codehaus.groovy.reflection.ClassInfo Auth254GrailsPlugin.$staticClassInfo
+    public static transient boolean Auth254GrailsPlugin.__$stMC
+    private transient groovy.lang.MetaClass Auth254GrailsPlugin.metaClass
+    private static java.lang.ref.SoftReference Auth254GrailsPlugin.$callSiteArray
+    ========== methods ==========
+    public java.lang.Object Auth254GrailsPlugin.getDoWithApplicationContext()
+    public java.lang.Object Auth254GrailsPlugin.getVersion()
+    public java.lang.Object Auth254GrailsPlugin.getAuthorEmail()
+    public final native java.lang.Class java.lang.Object.getClass()
+    public java.lang.Object Auth254GrailsPlugin.getAuthor()
+    public void Auth254GrailsPlugin.setDoWithWebDescriptor(java.lang.Object)
+    public void Auth254GrailsPlugin.setOnConfigChange(java.lang.Object)
+    public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+    public java.lang.Object Auth254GrailsPlugin.getDocumentation()
+    public void Auth254GrailsPlugin.setDocumentation(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getOnShutdown()
+    public void Auth254GrailsPlugin.setDoWithApplicationContext(java.lang.Object)
+    public final native void java.lang.Object.notify()
+    public boolean java.lang.Object.equals(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getGrailsVersion()
+    public void Auth254GrailsPlugin.setTitle(java.lang.Object)
+    public void Auth254GrailsPlugin.setDescription(java.lang.Object)
+    public void Auth254GrailsPlugin.setPluginExcludes(java.lang.Object)
+    public void Auth254GrailsPlugin.setOnShutdown(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getOnConfigChange()
+    public groovy.lang.MetaClass Auth254GrailsPlugin.getMetaClass()
+    public native int java.lang.Object.hashCode()
+    public java.lang.Object Auth254GrailsPlugin.getPluginExcludes()
+    public final void java.lang.Object.wait() throws java.lang.InterruptedException
+    public void Auth254GrailsPlugin.setAuthorEmail(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getTitle()
+    public java.lang.Object Auth254GrailsPlugin.getProperty(java.lang.String)
+    public java.lang.Object Auth254GrailsPlugin.getOnChange()
+    public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+    public void Auth254GrailsPlugin.setDoWithDynamicMethods(java.lang.Object)
+    public final native void java.lang.Object.notifyAll()
+    public void Auth254GrailsPlugin.setGrailsVersion(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getDoWithSpring()
+    public java.lang.String java.lang.Object.toString()
+    public void Auth254GrailsPlugin.setProperty(java.lang.String,java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getDoWithWebDescriptor()
+    public void Auth254GrailsPlugin.setDoWithSpring(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.invokeMethod(java.lang.String,java.lang.Object)
+    public void Auth254GrailsPlugin.setMetaClass(groovy.lang.MetaClass)
+    public java.lang.Object Auth254GrailsPlugin.getDoWithDynamicMethods()
+    public void Auth254GrailsPlugin.setVersion(java.lang.Object)
+    public void Auth254GrailsPlugin.setOnChange(java.lang.Object)
+    public void Auth254GrailsPlugin.setAuthor(java.lang.Object)
+    public java.lang.Object Auth254GrailsPlugin.getDescription()
+    ========== attempt to access application property ==========
+    ***** application?.getClass()?.getName() = org.codehaus.groovy.grails.commons.DefaultGrailsApplication
+    ***** application = org.codehaus.groovy.grails.commons.DefaultGrailsApplication@23710b31
+    |Server running. Browse to http://localhost:8080/myapp254
+    
