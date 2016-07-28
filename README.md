@@ -1,6 +1,7 @@
 # auth254
 a simple Grails plugin created using Grails 2.5.4
 
+## creating the grails 2.5.4 plugin
 
     ashburndave@dphnuc:~/g2projects$ grails --version
     Grails version: 2.5.4
@@ -103,4 +104,33 @@ a simple Grails plugin created using Grails 2.5.4
     27 directories, 15 files
     ashburndave@dphnuc:~/g2projects$ 
     
+## adding an _Events.groovy script to the plugin
+
+When I create an _Events.groovy and define the eventCompileStart closure I am not able to access the application property.
+But reading through the Grails documentation suggests that I should be able to do exactly that.
+
+    ashburndave@dphnuc:~/g2projects/auth254$ cat scripts/_Events.groovy
+    
+    eventCompileStart = { kind ->
+      println "***** auth254/scripts/_Events.groovy eventCompileStart"
+   
+      println "***** kind?.getClass()?.getName() = ${kind?.getClass()?.getName()}"
+      println "***** kind = ${kind}"
+    
+      println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
+      println "***** application = ${application}"
+    }
+    
+    ashburndave@dphnuc:~/g2projects/auth254$ 
+    ashburndave@dphnuc:~/g2projects/auth254$ grails --non-interactive --plain-output compile
+    |Loading Grails 2.5.4
+    |Configuring classpath
+    .
+    |Environment set to development
+    ......***** auth254/scripts/_Events.groovy eventCompileStart
+    ***** kind?.getClass()?.getName() = org.codehaus.gant.GantBinding
+    ***** kind = org.codehaus.gant.GantBinding@8d8f754
+    Error |
+    Error executing script Compile: No such property: application for class: _Events (Use --stacktrace to see the full trace)
+    ashburndave@dphnuc:~/g2projects/auth254$ 
 
