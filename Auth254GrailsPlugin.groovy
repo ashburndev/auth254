@@ -56,8 +56,11 @@ Brief summary/description of the plugin.
         println "\n========== methods =========="
         this.class.methods.each {println it}
       
-        println ""
+        println "\n========== attempt to access application property =========="
+        println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
+        println "***** application = ${application}"
 
+        println ""
     }
 
     def doWithDynamicMethods = { ctx ->
