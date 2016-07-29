@@ -1,4 +1,5 @@
 // def application   // defining application here does not result in dependency injection ... it is just null
+def application = grails.util.Holders.getGrailsApplication()
 
 eventConfigureTomcat = { tomcat ->
   println "***** auth254/scripts/_Events.groovy eventConfigureTomcat"
@@ -9,8 +10,8 @@ eventConfigureTomcat = { tomcat ->
 // ***** tomcat = org.apache.catalina.startup.Tomcat@1ecee32c
 
   // Error groovy.lang.MissingPropertyException: No such property: application for class: _Events
-  // println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
-  // println "***** application = ${application}"
+  println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
+  println "***** application = ${application}"
 
   // Error groovy.lang.MissingPropertyException: No such property: grailsApp for class: _Events
   // println "***** grailsApp?.getClass()?.getName() = ${grailsApp?.getClass()?.getName()}"

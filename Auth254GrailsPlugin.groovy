@@ -56,7 +56,7 @@ Brief summary/description of the plugin.
   //        println "\n========== methods =========="
   //        this.class.methods.each {println it}
       
-        println "\n========== attempt to access application property =========="
+        // println "\n========== attempt to access application property =========="
         println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
         println "***** application = ${application}"
 
@@ -65,24 +65,29 @@ Brief summary/description of the plugin.
 
     def doWithDynamicMethods = { ctx ->
         // TODO Implement registering dynamic methods to classes (optional)
+        println "***** Auth254GrailsPlugin.groovy doWithDynamicMethods"
     }
 
     def doWithApplicationContext = { ctx ->
         // TODO Implement post initialization spring config (optional)
+        println "***** Auth254GrailsPlugin.groovy doWithApplicationContext"
     }
 
     def onChange = { event ->
         // TODO Implement code that is executed when any artefact that this plugin is
         // watching is modified and reloaded. The event contains: event.source,
         // event.application, event.manager, event.ctx, and event.plugin.
+        println "***** Auth254GrailsPlugin.groovy onChange"
     }
 
     def onConfigChange = { event ->
         // TODO Implement code that is executed when the project configuration changes.
         // The event is the same as for 'onChange'.
+        println "***** Auth254GrailsPlugin.groovy onConfigChange"
     }
 
     def onShutdown = { event ->
         // TODO Implement code that is executed when the application shuts down (optional)
+        println "***** Auth254GrailsPlugin.groovy onShutdown"
     }
 }
