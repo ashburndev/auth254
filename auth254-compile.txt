@@ -1,0 +1,135 @@
+|Loading Grails 2.5.4
+|Configuring classpath
+|Downloading: org/apache/apache/4/apache-4.pom
+|Downloading: org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom
+|Downloading: org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom
+|Downloading: org/apache/ant/ant-junit/1.9.4/ant-junit-1.9.4.pom
+|Downloading: org/apache/ant/ant/1.9.4/ant-1.9.4.pom
+|Downloading: org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom
+|Downloading: jline/jline/2.12/jline-2.12.pom
+|Downloading: org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+|Downloading: net/java/dev/jna/jna/4.0.0/jna-4.0.0.pom
+|Downloading: org/fusesource/jansi/jansi/1.11/jansi-1.11.pom
+|Downloading: org/fusesource/jansi/jansi-project/1.11/jansi-project-1.11.pom
+|Downloading: org/fusesource/fusesource-pom/1.8/fusesource-pom-1.8.pom
+|Downloading: org/codehaus/gant/gant_groovy1.8/1.9.6/gant_groovy1.8-1.9.6.pom
+|Downloading: org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+|Downloading: org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+|Downloading: org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom
+|Downloading: org/apache/ant/ant-trax/1.7.1/ant-trax-1.7.1.pom
+|Downloading: org/apache/ant/ant-parent/1.7.1/ant-parent-1.7.1.pom
+|Downloading: org/apache/ivy/ivy/2.3.0/ivy-2.3.0.pom
+|Downloading: org/apache/apache/7/apache-7.pom
+|Downloading: org/apache/commons/commons-parent/17/commons-parent-17.pom
+|Downloading: org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.pom
+|Downloading: org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+|Downloading: org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+|Downloading: org/grails/plugins/release/3.1.2/release-3.1.2.pom
+|Downloading: org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.pom
+|Downloading: org/apache/maven/maven-parent/19/maven-parent-19.pom
+|Downloading: org/apache/apache/9/apache-9.pom
+|Downloading: org/apache/ant/ant/1.8.0/ant-1.8.0.pom
+|Downloading: org/apache/ant/ant-parent/1.8.0/ant-parent-1.8.0.pom
+|Downloading: org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0.pom
+|Downloading: classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+|Downloading: org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+|Downloading: org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+|Downloading: org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+|Downloading: org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+|Downloading: org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+|Downloading: org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+|Downloading: org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+|Downloading: org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+|Downloading: org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+|Downloading: org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+|Downloading: org/apache/maven/maven-parent/11/maven-parent-11.pom
+|Downloading: org/apache/apache/5/apache-5.pom
+|Downloading: org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+|Downloading: org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+|Downloading: junit/junit/3.8.1/junit-3.8.1.pom
+|Downloading: org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+|Downloading: org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+|Downloading: org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+|Downloading: org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+|Downloading: backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+|Downloading: org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+|Downloading: org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+|Downloading: org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+|Downloading: org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+|Downloading: org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+|Downloading: org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+|Downloading: org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.pom
+|Downloading: org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom
+|Downloading: org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.pom
+|Downloading: org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom
+|Downloading: nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom
+|Downloading: nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom
+|Downloading: org/grails/plugins/rest-client-builder/2.1.1/rest-client-builder-2.1.1.pom
+|Downloading: org/grails/grails-datastore-rest-client/3.1.4.RELEASE/grails-datastore-rest-client-3.1.4.RELEASE.pom
+|Downloading: org/grails/plugins/release/3.1.2/release-3.1.2.zip
+|Downloading: org/grails/plugins/rest-client-builder/2.1.1/rest-client-builder-2.1.1.zip
+|Downloading: classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+|Downloading: org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+|Downloading: org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+|Downloading: org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.jar
+|Downloading: org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+|Downloading: org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+|Downloading: org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+|Downloading: org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+|Downloading: backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+|Downloading: org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+|Downloading: org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+|Downloading: org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+|Downloading: org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+|Downloading: org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+|Downloading: org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+|Downloading: org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.jar
+|Downloading: org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.jar
+|Downloading: org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar
+|Downloading: nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar
+|Downloading: nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar
+|Downloading: org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+|Downloading: org/grails/grails-datastore-rest-client/3.1.4.RELEASE/grails-datastore-rest-client-3.1.4.RELEASE.jar
+|Downloading: net/java/jvnet-parent/1/jvnet-parent-1.pom
+|Downloading: org/springframework/spring-webmvc/4.1.8.RELEASE/spring-webmvc-4.1.8.RELEASE.pom
+|Downloading: com/google/code/gson/gson/2.2.4/gson-2.2.4.pom
+|Downloading: org/springframework/spring-context-support/4.1.8.RELEASE/spring-context-support-4.1.8.RELEASE.pom
+|Downloading: org/grails/grails-datastore-core/3.1.5.RELEASE/grails-datastore-core-3.1.5.RELEASE.pom
+|Downloading: com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.pom
+|Downloading: javax/transaction/jta/1.1/jta-1.1.pom
+|Downloading: commons-validator/commons-validator/1.4.0/commons-validator-1.4.0.pom
+|Downloading: org/apache/commons/commons-parent/23/commons-parent-23.pom
+|Downloading: opensymphony/sitemesh/2.4/sitemesh-2.4.pom
+|Downloading: org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.pom
+|Downloading: org/springframework/spring-aspects/4.1.8.RELEASE/spring-aspects-4.1.8.RELEASE.pom
+|Downloading: commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.pom
+|Downloading: org/apache/commons/commons-parent/32/commons-parent-32.pom
+|Downloading: org/apache/apache/13/apache-13.pom
+|Downloading: commons-io/commons-io/2.2/commons-io-2.2.pom
+|Downloading: org/apache/commons/commons-parent/24/commons-parent-24.pom
+|Downloading: org/grails/grails-datastore-gorm/3.1.5.RELEASE/grails-datastore-gorm-3.1.5.RELEASE.pom
+|Downloading: org/grails/grails-datastore-simple/3.1.5.RELEASE/grails-datastore-simple-3.1.5.RELEASE.pom
+|Downloading: org/apache/commons/commons-parent/22/commons-parent-22.pom
+|Downloading: asm/asm-parent/3.3.1/asm-parent-3.3.1.pom
+|Downloading: org/objenesis/objenesis/1.4/objenesis-1.4.pom
+|Downloading: org/objenesis/objenesis-parent/1.4/objenesis-parent-1.4.pom
+|Downloading: org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+|Downloading: cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.pom
+|Downloading: cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar
+.
+|Environment set to development
+......
+|Installing zip release-3.1.2.zip...
+...
+|Installed plugin release-3.1.2
+.............
+|Installing zip rest-client-builder-2.1.1.zip...
+...
+|Installed plugin rest-client-builder-2.1.1
+..................
+|Compiling 7 source files
+
+..
+.......
+|Compiling 4 source files
+..
