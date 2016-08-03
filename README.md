@@ -104,6 +104,30 @@ a simple Grails plugin created using Grails 2.5.4
     27 directories, 15 files
     ashburndave@dphnuc:~/g2projects$ 
     
+## Grails 2.5.4 plugin dependencies
+
+I ran the command below to examine the dependencies of a Grails 2.5.4 plugin.  I copied the three .txt files
+created below to the top level directory of the actual project (~/g2projects/auth254) and commited them to github,
+where then can be found at the following URL.
+
+https://github.com/ashburndev/auth254
+
+    cd /tmp
+    rm -R ~/.grails
+    rm -R ~/.m2
+    grails --version
+    grails --non-interactive --plain-output create-plugin auth254 > /tmp/auth254-create-plugin.txt
+    cd auth254
+    grails --non-interactive --plain-output compile > /tmp/auth254-compile.txt
+    grails --non-interactive --plain-output dependency-report > /tmp/auth254-dependency-report.txt
+    
+    ashburndave@dphnuc:~$ cd ~
+    ashburndave@dphnuc:~$ find .grails -name "*.zip" -print
+    ashburndave@dphnuc:~$ find .m2 -name "*.zip" -print
+    .m2/repository/org/grails/plugins/release/3.1.2/release-3.1.2.zip
+    .m2/repository/org/grails/plugins/rest-client-builder/2.1.1/rest-client-builder-2.1.1.zip
+    ashburndave@dphnuc:~$ 
+
 ## adding an _Events.groovy script to the plugin
 
 When I create an _Events.groovy and define the eventCompileStart closure I am not able to access the application property.
