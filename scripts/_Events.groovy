@@ -5,9 +5,9 @@ eventConfigureTomcat = { tomcat ->
   println "***** auth254/scripts/_Events.groovy eventConfigureTomcat"
   println "***** tomcat?.getClass()?.getName() = ${tomcat?.getClass()?.getName()}"
   println "***** tomcat = ${tomcat}"
-// ***** auth254/scripts/_Events.groovy eventConfigureTomcat
-// ***** tomcat?.getClass()?.getName() = org.apache.catalina.startup.Tomcat
-// ***** tomcat = org.apache.catalina.startup.Tomcat@1ecee32c
+  // ***** auth254/scripts/_Events.groovy eventConfigureTomcat
+  // ***** tomcat?.getClass()?.getName() = org.apache.catalina.startup.Tomcat
+  // ***** tomcat = org.apache.catalina.startup.Tomcat@1ecee32c
 
   // Error groovy.lang.MissingPropertyException: No such property: application for class: _Events
   println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
@@ -30,9 +30,9 @@ eventCompileStart = { kind ->
   println "***** auth254/scripts/_Events.groovy eventCompileStart"
   println "***** kind?.getClass()?.getName() = ${kind?.getClass()?.getName()}"
   println "***** kind = ${kind}"
-// ***** auth254/scripts/_Events.groovy eventCompileStart
-// ***** kind?.getClass()?.getName() = org.codehaus.gant.GantBinding
-// ***** kind = org.codehaus.gant.GantBinding@71e7adbb
+  // ***** auth254/scripts/_Events.groovy eventCompileStart
+  // ***** kind?.getClass()?.getName() = org.codehaus.gant.GantBinding
+  // ***** kind = org.codehaus.gant.GantBinding@71e7adbb
 
   //  println "***** application?.getClass()?.getName() = ${application?.getClass()?.getName()}"
   //  println "***** application = ${application}"
@@ -47,6 +47,6 @@ eventCompileStart = { kind ->
   //  this.class.methods.each {println it}
 
   println ""
- 
+
 }
 
