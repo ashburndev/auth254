@@ -1,6 +1,11 @@
 # auth254
 a simple Grails plugin created using Grails 2.5.4
 
+This plug was created as part of an effort to better understand the Grails plugin architecture.  The immediate goal is the conversion of a Grails 2.1.1 web application (and its custom Grails 2.1.1 plugins) to a Grails 2.5.4 web application.  In preparation I read through the plugin sections of the relevent versions of the Grails documentation.  I do not immediately see any differences that would preclude the transition of the custom plugins between the two versions.
+
+    http://docs.grails.org/2.1.1/guide/plugins.html
+    http://docs.grails.org/2.5.4/guide/plugins.html
+
 ## creating the grails 2.5.4 plugin
 
     ashburndave@dphnuc:~/g2projects$ grails --version
@@ -375,3 +380,60 @@ But reading through the Grails documentation suggests that I should be able to d
     ***** application = org.codehaus.groovy.grails.commons.DefaultGrailsApplication@23710b31
     |Server running. Browse to http://localhost:8080/myapp254
     
+## Packaging the Grails 2.5.4 plugin
+
+From the Linux command prompt I ran the command
+
+    grails package-plugin
+
+After it completed, two new files (plugin.xml and grails-auth254-0.1.zip) were created in the top-level directory of the plugin.  As mentioned in the documentation, several of the files in the plugin directory structure (as genereated by the "grails create-plugin" command) are omitted from the zip file.
+
+    ashburndave@dphnuc:~/g2projects/auth254$ ls -latr
+    total 136
+    drwxrwxr-x 10 ashburndave ashburndave  4096 Mar  3 09:05 grails-app
+    drwxrwxr-x  4 ashburndave ashburndave  4096 Jul 28 07:07 src
+    drwxrwxr-x  4 ashburndave ashburndave  4096 Jul 28 07:07 test
+    drwxrwxr-x  2 ashburndave ashburndave  4096 Jul 28 07:07 lib
+    -rw-rw-r--  1 ashburndave ashburndave    94 Jul 28 07:07 application.properties
+    drwxrwxr-x  7 ashburndave ashburndave  4096 Jul 28 07:07 web-app
+    -rw-rw-r--  1 ashburndave ashburndave   215 Jul 28 07:14 .gitignore
+    -rw-rw-r--  1 ashburndave ashburndave 19143 Jul 28 09:05 README.md
+    drwxrwxr-x  2 ashburndave ashburndave  4096 Jul 29 05:27 scripts
+    -rw-rw-r--  1 ashburndave ashburndave  9270 Aug  1 08:54 auth254-create-plugin.txt
+    -rw-rw-r--  1 ashburndave ashburndave  9270 Aug  1 08:55 auth254-compile.txt
+    -rw-rw-r--  1 ashburndave ashburndave 13921 Aug  1 08:56 auth254-dependency-report.txt
+    drwxrwxr-x  2 ashburndave ashburndave  4096 Aug  3 07:43 .settings
+    drwxrwxr-x  3 ashburndave ashburndave  4096 Aug  3 07:44 target
+    drwxrwxr-x  3 ashburndave ashburndave  4096 Aug  3 07:44 target-eclipse
+    -rw-rw-r--  1 ashburndave ashburndave   669 Aug  3 07:44 .project
+    -rw-rw-r--  1 ashburndave ashburndave  1314 Aug  3 07:44 .classpath
+    -rw-rw-r--  1 ashburndave ashburndave  3523 Aug  3 07:46 Auth254GrailsPlugin.groovy
+    drwxrwxr-x  8 ashburndave ashburndave  4096 Aug  3 07:48 .git
+    drwxrwxr-x 10 ashburndave ashburndave  4096 Aug  5 06:10 ..
+    -rw-rw-r--  1 ashburndave ashburndave   323 Aug  5 06:12 plugin.xml
+    drwxrwxr-x 12 ashburndave ashburndave  4096 Aug  5 06:12 .
+    -rw-rw-r--  1 ashburndave ashburndave  3659 Aug  5 06:12 grails-auth254-0.1.zip
+    ashburndave@dphnuc:~/g2projects/auth254$
+    
+    ashburndave@dphnuc:~/g2projects/auth254$ jar tvf grails-auth254-0.1.zip 
+      3523 Wed Aug 03 07:46:40 EDT 2016 Auth254GrailsPlugin.groovy
+        94 Thu Jul 28 07:07:04 EDT 2016 application.properties
+       323 Fri Aug 05 06:12:40 EDT 2016 plugin.xml
+      2466 Wed Aug 03 07:44:54 EDT 2016 scripts/_Events.groovy
+       404 Thu Mar 03 09:05:56 EST 2016 scripts/_Install.groovy
+       210 Thu Mar 03 09:05:56 EST 2016 scripts/_Uninstall.groovy
+       420 Thu Mar 03 09:05:56 EST 2016 scripts/_Upgrade.groovy
+    ashburndave@dphnuc:~/g2projects/auth254$ 
+    
+    ashburndave@dphnuc:~/g2projects/auth254$ cat plugin.xml
+    <plugin name='auth254' version='0.1' grailsVersion='2.5 &gt; *'>
+      <author>Your name</author>
+      <title>Auth254 Plugin</title>
+      <description>Brief summary/description of the plugin.
+    </description>
+      <documentation>http://grails.org/plugin/auth254</documentation>
+      <type>Auth254GrailsPlugin</type>
+      <resources />
+    </plugin>
+
+    ashburndave@dphnuc:~/g2projects/auth254$ 
